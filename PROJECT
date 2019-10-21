@@ -1,0 +1,10 @@
+version: "2"
+domain: trilio.k8s.io
+repo: github.com/trilioData/k8s-triliovault-operator
+resources:
+- group: triliovault
+  version: v1alpha1
+  kind: TrilioVault
+- group: triliovault
+  version: v1alpha1
+  kind: Hpa

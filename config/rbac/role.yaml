@@ -1,0 +1,48 @@
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  creationTimestamp: null
+  name: manager-role
+rules:
+- apiGroups:
+  - triliovault.trilio.k8s.io
+  resources:
+  - hpas
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - triliovault.trilio.k8s.io
+  resources:
+  - hpas/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - triliovault.trilio.k8s.io
+  resources:
+  - triliovaults
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - triliovault.trilio.k8s.io
+  resources:
+  - triliovaults/status
+  verbs:
+  - get
+  - patch
+  - update

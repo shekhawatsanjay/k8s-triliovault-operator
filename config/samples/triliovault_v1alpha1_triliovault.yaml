@@ -1,0 +1,7 @@
+apiVersion: triliovault.trilio.k8s.io/v1alpha1
+kind: TrilioVault
+metadata:
+  name: triliovault-sample
+spec:
+  # Add fields here
+  foo: bar
