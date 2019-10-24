@@ -1,0 +1,11 @@
+apiVersion: v1
+name: k8s-triliovault-operator
+version: 0.1.0
+appVersion: "0.1.0"
+description: k8s-triliovault-operator manages the lifecycle of k8s-triliovault application designed for data recovery of kubernetes applications
+home: https://github.com/trilioData/k8s-triliovault
+sources:
+  - https://github.com/trilioData/k8s-triliovault-operator
+maintainers:
+- name: Trilio
+  email: support@trilio.io
